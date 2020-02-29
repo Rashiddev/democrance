@@ -1,9 +1,10 @@
 Project instructions
 -------------------------------------------------------
 
-Please run following commands to execute and test this project:
-python manage.py runserver 8000 (Please make sure that you already have PYTHON 3 installed on your system)
-python manage.py test
+Please run following commands in the given order to execute and test this project:
+1- pip install -r requirements.txt (Please makesure you're inside the project and pip3 is installed in the system)
+2- python manage.py test (Test the project)
+3- python manage.py runserver 8000 (Please make sure that you already have PYTHON 3 installed on your system)
 
 -------------------------------------------------------
 Download POSTman and import sample APIs from the POSTman link given below:
