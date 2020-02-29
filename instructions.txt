@@ -1,0 +1,55 @@
+Project instructions
+-------------------------------------------------------
+
+Please run following command to execute this project:
+python manage.py runserver 8000 (Please make sure that you already have PYTHON 3 installed on your system)
+
+-------------------------------------------------------
+Download POSTman and import sample APIs from the POSTman link given below:
+Once the server is running, you can execute sample APIs in POSTman.
+
+Postman link:
+https://www.getpostman.com/collections/930e1a241530acb61736
+
+
+In case if you don't have POSTman, you can use following samples to test APIs in the browser using Django's browsabe APIs.
+
+Samples:
+
+Customer Create API:
+URL: http://127.0.0.1:8000/api/v1/create_customer/
+Method: POST
+Sample data:
+{
+    "first_name": "Rashid",
+    "last_name": "Mahmood",
+    "dob": "1991-11-04"
+}
+
+
+Policy Create API:
+URL: http://127.0.0.1:8000/api/v1/create_policy/
+Method: POST
+Sample data:
+{
+	"type": "personal-accident",
+	"premium": 200,
+	"cover": 200000,
+	"customer": 1
+}
+Note: Please make sure that atleast one customer is created before creating policy. Replace "customer" with existing customer's id.
+
+
+Customer List API:
+URL: http://127.0.0.1:8000/api/v1/customers/
+Method: GET
+
+-------------------------------------------------------
+
+Accessing Admin:
+Using following details to login to admin panel:
+url: http://127.0.0.1:8000/admin/login/?next=/admin/
+username: admin
+password: test123#
+
+Note: For testing purpose, I've kept all the APIs open, it's mean you don't need any authentication to access those APIs.
